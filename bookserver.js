@@ -19,7 +19,7 @@ app.use((req, res) => {
   });
 });
 
-app.use(ErrorHandlerMiddleware);
+//app.use(ErrorHandlerMiddleware);
 app.use((error, req, res, next) => {
   const { message } = customResourceResponse.serverError;
   const data = {
